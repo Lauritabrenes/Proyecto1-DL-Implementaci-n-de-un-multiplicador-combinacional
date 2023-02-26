@@ -5,5 +5,8 @@ Se busca realizar un algoritmo, en lenguaje Python, de multiplicación en binari
 
 El analizis se basará en las siguientes especificaciones:
 
-  Especificación de entrada
-  Especificaciones de salida
+  -Especificación de entrada
+  -Especificaciones de salida
+  
+Para la entrada se podrá recibir factores en notación decimal, hexadecimal o binario.
+Para la solución del problema se va generar un documento .pdf en formato LaTEX, demostrando el desarrollo y el resultado final.
