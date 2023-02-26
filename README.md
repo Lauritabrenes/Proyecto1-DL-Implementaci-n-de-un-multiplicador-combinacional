@@ -6,7 +6,7 @@
 #### Grupo 20
 #### Profesor: Ing. Kaleb Alfaro Badilla
 
-#### Integrantes
+#### Integrantes:
 1. Montenegro Goméz Samuel
 2. Brenes Espinoza Laura Elena
 3. Suarez Sarmiento Javier
