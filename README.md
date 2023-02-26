@@ -1,12 +1,12 @@
-# Proyecto1-DL-Implementaci-n-de-un-multiplicador-combinacional
+# Proyecto I: Implementacion de un multiplicador combinacional
 
 
-### Instituto Tecnológico de Costa Rica
-### EL 3307: Diseño Lógico
-### Grupo 20
-### Profesor: Ing. Kaleb Alfaro Badilla
+# Instituto Tecnológico de Costa Rica
+# EL 3307: Diseño Lógico
+# Grupo 20
+# Profesor: Ing. Kaleb Alfaro Badilla
 
-### Integrantes
+# Integrantes
 1. Montenegro Goméz Samuel
 2. Brenes Espinoza Laura Elena
 3. Suarez Sarmiento Javier
