@@ -24,4 +24,4 @@ El analizis se basará en las siguientes especificaciones:
   -Especificaciones de salida
   
 Para la entrada se podrá recibir factores en notación decimal, hexadecimal o binario.
-Para la solución del problema se va generar un documento .pdf en formato LaTEX, demostrando el desarrollo y el resultado final.
+Para la solución del problema se va generar un documento .pdf en formato LaTeX, demostrando el desarrollo y el resultado final.
