@@ -25,3 +25,6 @@ El analizis se basará en las siguientes especificaciones:
   
 Para la entrada se podrá recibir factores en notación decimal, hexadecimal o binario.
 Para la solución del problema se va generar un documento .pdf en formato LaTeX, demostrando el desarrollo y el resultado final.
+
+
+![Imagen de WhatsApp 2023-03-04 a las 14 12 06](https://user-images.githubusercontent.com/111261878/223181484-c1d91789-289e-4986-9f63-a0cb3cb1e8f2.jpg)
