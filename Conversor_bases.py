@@ -76,10 +76,13 @@ identificador=input("Digite la base del numero:" )
 
 if identificador=="h":
     print("Puede digitar un numero o la letra equivalente")
+    binario1=str(input("Digite el numero1 o letra1: "))
+    binario2=str(input("Digite el numero2 o letra2: "))
 
-
-binario1=str(input("Digite el numero1: "))
-binario2=str(input("Digite el numero2: "))
+else:
+    
+    binario1=str(input("Digite el numero1: "))
+    binario2=str(input("Digite el numero2: "))
 
 numero1=0
 numero2=0
@@ -90,15 +93,15 @@ if identificador=="b":
 	numero1=int(binario1)
 	numero2=int(binario2)
 if identificador=="h":
-    #if (numero1<=9 & numero2<=9):
-    numero1=hexa_2_deci_2_bin(int(binario1))
-    numero2=hexa_2_deci_2_bin(int(binario2))
+    if (numero1<=9 & numero2<=9):
+        numero1=hexa_2_deci_2_bin(int(binario1))
+        numero2=hexa_2_deci_2_bin(int(binario2))
 """    else:
         numero1=str(binario1)
         numero2=str(binario2)
         numero1=hexa_2_deci_2_bin(str(binario1))
         numero2=hexa_2_deci_2_bin(str(binario2))
-  """      
+"""      
         
 #else:
  #   print("\n Los numeros digitados no corresponde a ninguna de las expresiones: decimal, hexadecimal o binaria")
