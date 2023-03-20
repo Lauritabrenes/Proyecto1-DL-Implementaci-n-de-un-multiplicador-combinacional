@@ -1,7 +1,7 @@
 from funciones import menu1,menu2
 from multiplicacion import multiplicacion
 
-def multiplicador_binario():
+def multiplicador_binario(bits, numero1, numero2):
     print("Bases de los numeros: decimal=d, hexadecimal=h, binario=b")
     print("Digite 1 si sus numeros posee la misma base: ")
     print("Digite 2 si sus numeros posee bases diferentes: ")
