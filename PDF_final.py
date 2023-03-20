@@ -44,31 +44,30 @@ def export_pdf(bits, numero1, numero2, binario1, binario2, r, pasos, config):
     config_pres=("Su archivo de configuracion es: ")
 
     if (config==""):
-        config_pres="No hay archivo de configuracion txt"
-        
-    file.write(r"    \section{Grupo 20}")
-    file.write("\n")
-    file.write(r"    \begin{frame}{Valores de entrada de usuario}")
-    file.write("\n")
-    file.write(r"        \begin{itemize}")
-    file.write("\n")
-    file.write(r"        \item Cantidad de bits de los factores a multiplicar es : ")
-    file.write(bits)
-    file.write("\n")
-    file.write(r"        \item Factor 1: ")
-    file.write(numero1)
-    file.write("\n")
-    file.write(r"        \item Factor 2: ")
-    file.write(numero2)
-    file.write("\n")
-    file.write(r"        \item ")
-    file.write(config_pres)
-    file.write(config)
-    file.write("\n")
-    file.write(r"        \end{itemize}")
-    file.write("\n")
-    file.write(r"    \end{frame}")
-    file.write("\n")
+           
+        file.write(r"    \section{Grupo 20}")
+        file.write("\n")
+        file.write(r"    \begin{frame}{Valores de entrada de usuario}")
+        file.write("\n")
+        file.write(r"        \begin{itemize}")
+        file.write("\n")
+        file.write(r"        \item Cantidad de bits de los factores a multiplicar es : ")
+        file.write(bits)
+        file.write("\n")
+        file.write(r"        \item Factor 1: ")
+        file.write(numero1)
+        file.write("\n")
+        file.write(r"        \item Factor 2: ")
+        file.write(numero2)
+        file.write("\n")
+        file.write(r"        \item ")
+        file.write(config_pres)
+        file.write(config)
+        file.write("\n")
+        file.write(r"        \end{itemize}")
+        file.write("\n")
+        file.write(r"    \end{frame}")
+        file.write("\n")
 
 # -----------------------------------------------------
 #------------------------------------------------ Tercera Diapo.
@@ -256,5 +255,30 @@ def export_pdf(bits, numero1, numero2, binario1, binario2, r, pasos, config):
 
     subprocess.call(["texmaker", "beamer.tex"])
 
+
+#función para leer un archivo de texto, no recibe nada y retorna 3 strings
+def leer_texto():
+    print('ingrese el nombre del archivo de configuracion')
+    a = input()
+    archivo=(a+'.f')
+
+    with open(archivo,'r') as documento:
+        cont = documento.readline()
+        palabras = cont.split()
+        lista = []
+        for palabra in palabras:
+            lista.append(palabra)
+            
+        numero1 = lista[3]
+        numero2 = lista[5]
+        bits = lista[1]
+        
+        print("cantidad de bits: ", bits)
+        print("el factor 1 es: ",  numero1)
+        print("el factor 2 es: ", numero2)
+
+    return bits, numero1, numero2, archivo    
+
+##
 
 
