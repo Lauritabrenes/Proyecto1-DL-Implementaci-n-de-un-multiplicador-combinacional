@@ -57,3 +57,16 @@ Prueba con consola, 6 bits, misma base, base en decimal, número1= 42 y número2
 Prueba 
 [Video prueba 4.zip](https://github.com/Lauritabrenes/Proyecto1-DL-Implementaci-n-de-un-multiplicador-combinacional/files/11032184/Video.prueba.4.zip)
 Prueba con .txt, 6 bits, diferente base, base numero1= d, base numero2=b, número1= 45 y número2= 15
+
+
+
+
+
+
+
+### Pruebas Fotos
+
+
+
+#### Prueba #1
+
