@@ -12,12 +12,14 @@ def Entrada_Datos(bits, factor1,factor2):  # funcion que se encarga de leer y pr
     if (largofactor1>bits)|(largofactor2>bits):
         print("Numero supera la cantidad de bits")
     else:
-        numero1=int(factor1[1:largofactor1])
-        numero2=int(factor2[1:largofactor2])
         if factor1[0]==factor2[0]:
-            return menu1(factor1[0])
+          numero1=int(factor1[1:largofactor1])
+          numero2=int(factor2[1:largofactor2])
+          return menu1(factor1[0])
         if factor1[0]=="d":
             if factor2[0]=="b":
+                numero1=int(factor1[1:largofactor1])
+                numero2=int(factor2[1:largofactor2])
                 binario1=numero1
                 binario2=numero2
                 numero1=decimal_a_binario(int(binario1))
@@ -25,37 +27,51 @@ def Entrada_Datos(bits, factor1,factor2):  # funcion que se encarga de leer y pr
                 return numero1, numero2
         if factor1[0]=="d":
             if factor2[0]=="h": 
+                numero1=int(factor1[1:largofactor1])
                 binario1=numero1
-                lista2=list(numero2)
+                largo=len(factor2)
+                largo1=factor2[1:largo]
+                lis=list(largo1)
                 numero1=decimal_a_binario(int(binario1))
-                numero2=hexadecimal_a_binario(lista2)
+                numero2=hexadecimal_a_binario(lis)
                 return numero1, numero2
         if factor1[0]=="b":
             if factor2[0]=="d":
+                numero1=int(factor1[1:largofactor1])
+                numero2=int(factor2[1:largofactor2])
                 binario1=numero1
                 binario2=numero2
                 numero1=int(binario1)
                 numero2=decimal_a_binario(int(binario2))
                 return numero1,numero2
         if factor1[0]=="b":
-            if factor2[0]=="h":#problemas con el numeros en letras
+            if factor2[0]=="h":
+                numero1=int(factor1[1:largofactor1])
                 binario1=numero1
-                #lista2=list(input("Ingrese el numero hexadecimal 2: "))
+                largo=len(factor2)
+                largo1=factor2[1:largo]
+                lis=list(largo1)
                 numero1=int(binario1)
-                #numero2=hexadecimal_a_binario(lista2)
+                numero2=hexadecimal_a_binario(lis)
                 return numero1, numero2
         if factor1[0]=="h":
             if factor2[0]=="d":
-                #lista1=list(input("Ingrese el numero hexadecimal 1: "))
+                numero2=int(factor2[1:largofactor2])
+                largo=len(factor1)
+                largo1=factor1[1:largo]
+                lis=list(largo1)
                 binario2=numero2
-                #numero1=hexadecimal_a_binario(lista1)
+                numero1=hexadecimal_a_binario(lis)
                 numero2=decimal_a_binario(int(binario2))
                 return numero1,numero2
         if factor1[0]=="h":
             if factor2[0]=="b":
-                #lista1=list(input("Ingrese el numero hexadecimal 1: "))
+                numero2=int(factor2[1:largofactor2])
+                largo=len(factor1)
+                largo1=factor1[1:largo]
+                lis=list(largo1)
                 binario2=numero2
-                #numero1=hexadecimal_a_binario(lista1)
+                numero1=hexadecimal_a_binario(lis)
                 numero2=int(binario2)
                 return numero1, numero2
         else:
