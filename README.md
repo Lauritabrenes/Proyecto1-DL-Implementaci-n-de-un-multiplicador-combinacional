@@ -69,4 +69,14 @@ Prueba con .txt, 6 bits, diferente base, base numero1= d, base numero2=b, númer
 
 
 #### Prueba #1
+![foto 1](https://user-images.githubusercontent.com/111261878/226702381-b49a05d8-0232-4e46-9156-b64b605d3b8b.jpg)
 
+
+
+#### Prueba #2
+![foto 2](https://user-images.githubusercontent.com/111261878/226702441-4cb580f4-074a-4f3b-98b4-31c4d2edca2a.jpg)
+
+
+
+#### Prueba #3
+![foto 3](https://user-images.githubusercontent.com/111261878/226702528-8f8b9f50-0aae-4f48-a78f-532ffd7f593f.jpg)
