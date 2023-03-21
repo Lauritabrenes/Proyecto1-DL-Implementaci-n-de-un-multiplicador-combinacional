@@ -214,19 +214,11 @@ def leer_texto():
     lista = []
     for palabra in palabras:
       lista.append(palabra)
-<<<<<<< HEAD
 
     factor1 = lista[3]
     factor2 = lista[5]
     bits = lista[1]
 
-=======
-      
-    factor1 = lista[3]
-    factor2 = lista[5]
-    bits = lista[1]
-      
->>>>>>> abecc58542e45d57d90bd16bd09a8d5b1dd617b7
     print("cantidad de bits: ", bits)
     print("el factor 1 es: ", factor1)
     print("el factor 2 es: ", factor2)
