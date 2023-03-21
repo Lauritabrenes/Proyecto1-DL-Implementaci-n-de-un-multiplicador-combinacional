@@ -147,7 +147,7 @@ def export_pdf(bits, factor1, factor2, num1, num2, r, config):
     file.write(r"      \hphantom{12345678910111}x")
     file.write(num2)
     file.write("\n")
-    #fañta pasos
+    #falta pasos
     file.write(r"        \item Resultado de la multiplicacion total: ")
     file.write(r)
     file.write("\n")
@@ -213,9 +213,11 @@ def leer_texto():
     lista = []
     for palabra in palabras:
       lista.append(palabra)
-      factor1 = lista[3]
-      factor2 = lista[5]
-      bits = lista[1]
+      
+    factor1 = lista[3]
+    factor2 = lista[5]
+    bits = lista[1]
+      
     print("cantidad de bits: ", bits)
     print("el factor 1 es: ", factor1)
     print("el factor 2 es: ", factor2)
