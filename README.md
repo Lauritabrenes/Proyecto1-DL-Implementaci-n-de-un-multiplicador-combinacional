@@ -80,3 +80,9 @@ Prueba con .txt, 6 bits, diferente base, base numero1= d, base numero2=b, númer
 
 #### Prueba #3
 ![foto 3](https://user-images.githubusercontent.com/111261878/226702528-8f8b9f50-0aae-4f48-a78f-532ffd7f593f.jpg)
+
+
+
+#### Prueba #4
+Desde la consola de la computadora, con el ejemplo#1 beamer. PDF
+![Foto prueba 4](https://user-images.githubusercontent.com/111261878/226707012-d8d684ab-9ed2-4f06-ba44-b28b22a279d6.png)
