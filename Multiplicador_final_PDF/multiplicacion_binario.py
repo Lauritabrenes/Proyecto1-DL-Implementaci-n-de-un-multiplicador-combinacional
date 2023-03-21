@@ -130,10 +130,10 @@ def export_pdf(bits, factor1, factor2, num1, num2, r, config):
     file.write("\n")
     file.write(r"        \item Paso 1: conversion a binario de cada factor:")
     file.write("\n")
-    file.write(r"        \item    Factor 1 -> ")
+    file.write(r"        \item    Factor 1: ")
     file.write(num1)
     file.write("\n")
-    file.write(r"        \item    Factor 2 -> ")
+    file.write(r"        \item    Factor 2: ")
     file.write(num2)
     file.write("\n")
     file.write(r"        \item Desarrollo ")
@@ -147,7 +147,7 @@ def export_pdf(bits, factor1, factor2, num1, num2, r, config):
     file.write(r"      \hphantom{12345678910111}x")
     file.write(num2)
     file.write("\n")
-    #fañta pasos
+    #falta pasos
     file.write(r"        \item Resultado de la multiplicacion total: ")
     file.write(r)
     file.write("\n")
@@ -207,15 +207,18 @@ def leer_texto():
   print('ingrese el nombre del archivo de configuracion')
   a = input()
   archivo = (a + '.f')
+
   with open(archivo, 'r') as documento:
     cont = documento.readline()
     palabras = cont.split()
     lista = []
     for palabra in palabras:
       lista.append(palabra)
-      factor1 = lista[3]
-      factor2 = lista[5]
-      bits = lista[1]
+
+    factor1 = lista[3]
+    factor2 = lista[5]
+    bits = lista[1]
+
     print("cantidad de bits: ", bits)
     print("el factor 1 es: ", factor1)
     print("el factor 2 es: ", factor2)
@@ -234,7 +237,7 @@ def proyecto():
         factor1 = archivo[1]
         factor2 = archivo[2]
         config = archivo[3]
-        final = Entrada_Datos(bits, factor1, factor2)
+        final = Entrada_Datos(bits, str(factor1), str(factor2))
         num1 =(final[0])
         num2 = (final[1])
         nuevovalor=multiplicacion(num1,num2)
@@ -260,12 +263,12 @@ def proyecto():
       if id==2:
           nuevovalor=menu2()
           num1,num2=nuevovalor
+          print(type(num2))
           numero1=int(num1)
           numero2=int(num2)
           nuevovalor=multiplicacion(numero1,numero2)
-          export_pdf(bits2, num1, num2, str(num1),str(num2),str(nuevovalor), config)
+          export_pdf(bits2,num1,num2,str(numero1),str(numero2),config)
           sys.exit()
-          
       else:
           print("no valido")
     
