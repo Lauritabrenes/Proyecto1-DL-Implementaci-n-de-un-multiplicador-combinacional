@@ -234,7 +234,7 @@ def proyecto():
         factor1 = archivo[1]
         factor2 = archivo[2]
         config = archivo[3]
-        final = Entrada_Datos(bits, factor1, factor2)
+        final = Entrada_Datos(bits, str(factor1), str(factor2))
         num1 =(final[0])
         num2 = (final[1])
         nuevovalor=multiplicacion(num1,num2)
