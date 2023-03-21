@@ -24,11 +24,11 @@ def Entrada_Datos(bits, factor1,factor2):  # funcion que se encarga de leer y pr
                 numero2=int(binario2)
                 return numero1, numero2
         if factor1[0]=="d":
-            if factor2[0]=="h": #problemas con el numeros en letras
+            if factor2[0]=="h": 
                 binario1=numero1
-                #corregir
+                lista2=list(numero2)
                 numero1=decimal_a_binario(int(binario1))
-                #numero2=hexadecimal_a_binario(lista2)
+                numero2=hexadecimal_a_binario(lista2)
                 return numero1, numero2
         if factor1[0]=="b":
             if factor2[0]=="d":
@@ -191,18 +191,15 @@ def leer_texto():
   print('ingrese el nombre del archivo de configuracion')
   a = input()
   archivo = (a + '.f')
-
   with open(archivo, 'r') as documento:
     cont = documento.readline()
     palabras = cont.split()
     lista = []
     for palabra in palabras:
       lista.append(palabra)
-
-    factor1 = lista[3]
-    factor2 = lista[5]
-    bits = lista[1]
-
+      factor1 = lista[3]
+      factor2 = lista[5]
+      bits = lista[1]
     print("cantidad de bits: ", bits)
     print("el factor 1 es: ", factor1)
     print("el factor 2 es: ", factor2)
@@ -250,7 +247,9 @@ def proyecto():
           numero1=int(num1)
           numero2=int(num2)
           nuevovalor=multiplicacion(numero1,numero2)
-          print("\nMultiplication Result = " + str(nuevovalor))
+          export_pdf(bits2, num1, num2, str(num1),str(num2),str(nuevovalor), config)
+          sys.exit()
+          
       else:
           print("no valido")
     
