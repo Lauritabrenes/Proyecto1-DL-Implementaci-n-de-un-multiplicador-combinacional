@@ -33,7 +33,7 @@ def menu2():
         return menu1(identificador1)
     if identificador1=="d":
         if identificador2=="b":
-            binario1=str(input("Ingrese el numero 1: "))
+            binario1=str(input("Ingrese el numero_1: "))
             binario2=str(input("Ingrese el numero 2: "))
             numero1=decimal_a_binario(int(binario1))
             numero2=int(binario2)
