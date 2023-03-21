@@ -33,17 +33,27 @@ Para la solución del problema se va generar un documento .pdf en formato LaTeX,
 
 ## Pruebas
 
-
+### Pruebas Videos
 
 #### Prueba #1
 Prueba todo copila pero con fallo latex
-
 https://user-images.githubusercontent.com/111261878/226691877-c869c974-1752-49cc-a420-555016680be2.MOV
 
 
 
 #### Prueba #2
+Prueba con consola, misma base, 6 bits, base en binario, número1 = 15 y número2= 10
+[video prueba 2.zip](https://github.com/Lauritabrenes/Proyecto1-DL-Implementaci-n-de-un-multiplicador-combinacional/files/11032074/video.prueba.2.zip)
 
 
 
+#### Prueba #3
+Prueba con consola, 6 bits, misma base, base en decimal, número1= 42 y número2= 12
+[Video prueba 3.zip](https://github.com/Lauritabrenes/Proyecto1-DL-Implementaci-n-de-un-multiplicador-combinacional/files/11032153/Video.prueba.3.zip)
 
+
+
+#### Prueba #4
+Prueba 
+[Video prueba 4.zip](https://github.com/Lauritabrenes/Proyecto1-DL-Implementaci-n-de-un-multiplicador-combinacional/files/11032184/Video.prueba.4.zip)
+Prueba con .txt, 6 bits, diferente base, base numero1= d, base numero2=b, número1= 45 y número2= 15
