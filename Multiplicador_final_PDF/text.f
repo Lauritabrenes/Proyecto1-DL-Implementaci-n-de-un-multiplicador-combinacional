@@ -1,1 +1,1 @@
-bits 6 a d45 b d15
+bits 6 a d14 b b10
