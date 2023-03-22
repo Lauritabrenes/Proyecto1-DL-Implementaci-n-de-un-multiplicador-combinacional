@@ -35,7 +35,7 @@ Para la solución del problema se va generar un documento .pdf en formato LaTeX,
 
 ### Pruebas Videos
 
-#### Prueba #1
+  #### Prueba #1
 Prueba todo copila pero con fallo latex
 https://user-images.githubusercontent.com/111261878/226691877-c869c974-1752-49cc-a420-555016680be2.MOV
 
