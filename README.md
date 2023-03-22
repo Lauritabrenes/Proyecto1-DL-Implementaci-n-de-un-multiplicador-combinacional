@@ -65,8 +65,8 @@ Prueba con .txt, 6 bits, diferente base, base numero1= d, base numero2=b, númer
 
 
 #### Prueba #6
+[Video prueba 6.zip](https://github.com/Lauritabrenes/Proyecto1-DL-Implementaci-n-de-un-multiplicador-combinacional/files/11035766/Video.prueba.6.zip)
 
-Uploading Video prueba 6.mp4…
 
 
 
