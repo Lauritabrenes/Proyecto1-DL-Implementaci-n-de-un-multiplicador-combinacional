@@ -130,10 +130,10 @@ def export_pdf(bits, factor1, factor2, num1, num2, r, config):
     file.write("\n")
     file.write(r"        \item Paso 1: conversion a binario de cada factor:")
     file.write("\n")
-    file.write(r"        \item    Factor 1: ")
+    file.write(r"        \item    Factor 1 -> ")
     file.write(num1)
     file.write("\n")
-    file.write(r"        \item    Factor 2: ")
+    file.write(r"        \item    Factor 2 -> ")
     file.write(num2)
     file.write("\n")
     file.write(r"        \item Desarrollo ")
@@ -147,7 +147,7 @@ def export_pdf(bits, factor1, factor2, num1, num2, r, config):
     file.write(r"      \hphantom{12345678910111}x")
     file.write(num2)
     file.write("\n")
-    #falta pasos
+    #fañta pasos
     file.write(r"        \item Resultado de la multiplicacion total: ")
     file.write(r)
     file.write("\n")
@@ -206,24 +206,38 @@ def export_pdf(bits, factor1, factor2, num1, num2, r, config):
 def leer_texto():
   print('ingrese el nombre del archivo de configuracion')
   a = input()
-  archivo = (a + '.f')
-
+  archivo = (a) 
   with open(archivo, 'r') as documento:
-    cont = documento.readline()
-    palabras = cont.split()
-    lista = []
-    for palabra in palabras:
-      lista.append(palabra)
-
-    factor1 = lista[3]
-    factor2 = lista[5]
-    bits = lista[1]
-
-    print("cantidad de bits: ", bits)
-    print("el factor 1 es: ", factor1)
-    print("el factor 2 es: ", factor2)
-
+     cont = documento.readline()
+     palabras = cont.split()
+     lista = []
+     for palabra in palabras:
+       lista.append(palabra)
+       print (lista)
+       factor1 = lista[3]
+       factor2 = lista[5]
+       bits = lista[1]
+       
   return bits, factor1, factor2, archivo
+
+  # nombre_archivo = input()    
+  # contenido = open(nombre_archivo, "r")
+  # archivo = contenido.readline()
+  # print(archivo)
+  # lista = archivo.split() 
+  # print(lista)     
+  # bits = lista[1]            
+  # factor1 = lista[3]                  
+  # factor2 = lista[6]                  
+  # identificador1 = lista [4]
+  # identificador2 = lista [7]
+  # print("cantidad de bits: ", bits)
+  # print("base del factor 1 es: ", identificador1)
+  # print("el factor 1 es: ", factor1)
+  # print("el factor 2 es: ", factor2)
+  # print("base del factor 2 es: ", identificador2)
+
+  # return bits, factor1, factor2, archivo, identificador1, identificador2
 
 
 def proyecto():
@@ -263,12 +277,12 @@ def proyecto():
       if id==2:
           nuevovalor=menu2()
           num1,num2=nuevovalor
-          print(type(num2))
           numero1=int(num1)
           numero2=int(num2)
           nuevovalor=multiplicacion(numero1,numero2)
-          export_pdf(bits2,num1,num2,str(numero1),str(numero2),config)
+          export_pdf(bits2, num1, num2, str(num1),str(num2),str(nuevovalor), config)
           sys.exit()
+          
       else:
           print("no valido")
     
